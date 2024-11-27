@@ -1,0 +1,200 @@
+/* Resetando margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(105, 225, 255, 0.8); /* Transparente */
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+header .logo h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Navegação */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Seção de imagem com fundo completo */
+.imagem {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* A imagem ocupa toda a tela */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Seções abaixo da imagem */
+section {
+    padding: 40px;
+    background-color: #fff;  /* Cor de fundo padrão das seções */
+    margin-top: 10px;         /* Distância entre seções */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+/* Linha de separação entre a imagem e as seções */
+.imagem + section {
+    border-top: 4px solid #007bff; /* Linha azul separando as seções */
+}
+
+/* Seção sobre */
+.conteudo1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Cor sutil para separar visualmente */
+    padding: 30px;
+}
+
+.texto-esquerda, .texto-direita {
+    width: 48%;
+}
+
+.texto-esquerda h2, .texto-direita h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Cards (serviços, equipe, depoimentos, blog) */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Seção do formulário de contato */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.botao-enviar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #0056b3;
+}
